@@ -22,7 +22,7 @@ class Attention(nn.Module):
 
 class DSConv2d(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride):
-        super(DSConv2d, self).__init__()
+        super().__init__()
         self.depthwise = nn.Conv2d(in_channels=in_channels,
                                    out_channels=in_channels,
                                    kernel_size=kernel_size,
